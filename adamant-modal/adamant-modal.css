@@ -1,0 +1,36 @@
+[adamant-modal]:before {
+  background: #000;
+  bottom: 0px;
+  content: '';
+  left: 0px;
+  opacity: .5;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+}
+[adamant-modal] {
+  border-radius: 6px;
+  overflow: auto;
+  left: 50%;
+  margin-left: -384px;
+  padding: 1em;
+  position: fixed;
+  top: 5em;
+  width: 768px;
+  z-index: 1;
+}
+[adamant-modal]:not(.adamant-modal-show) {
+  display: none;
+}
+[adamant-modal]:after {
+  background: #FFF;
+  border-radius: 6px;
+  content: '';
+  height: 100%;
+  left: 0px;
+  position:absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
