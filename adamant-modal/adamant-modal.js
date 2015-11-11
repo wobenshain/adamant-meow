@@ -26,7 +26,7 @@ $(document).ready(function() {
             },1000);
           }
         },
-        "location": "https://raw.githubusercontent.com/wobenshain/adamant-meow/adamant_modal"
+        "location": "https://raw.githubusercontent.com/wobenshain/adamant-meow/master"
        }
     });
     $('<link href="'+$.adamant.location+'/adamant-modal/adamant-modal.css" id="adamant-modal" rel="stylesheet" type="text/css" />').prependTo(document.head);
