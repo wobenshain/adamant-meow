@@ -1,0 +1,63 @@
+[adamant-modal],
+[adamant-modal-static] {
+  background: #FFF;
+  overflow: auto;
+  left: 50%;
+  margin-left: -384px;
+  position: fixed;
+  top: 65px;
+  width: 768px;
+}
+[adamant-modal].adamant-show:not(.adamant-fadein),
+[adamant-modal-static].adamant-show:not(.adamant-fadein),
+[adamant-modal-background].adamant-show:not(.adamant-fadein) {
+  opacity: 0;
+}
+[adamant-modal].adamant-fadein,
+[adamant-modal-static].adamant-fadein {
+  opacity: 1;
+  transition: 1s linear;
+}
+[adamant-modal].adamant-fadeout,
+[adamant-modal-static].adamant-fadeout {
+  opacity: 0;
+  transition: 1s linear;
+}
+[adamant-modal]:not(.adamant-show),
+[adamant-modal-static]:not(.adamant-show),
+[adamant-modal-background]:not(.adamant-show) {
+  display: none;
+}
+[adamant-modal-background] {
+  background: #000;
+  bottom: 0px;
+  left: 0px;
+  opacity: .5;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+@media (max-width: 898px) {
+  [adamant-modal],
+  [adamant-modal-static] {
+    bottom: 65px;
+    left: 65px;
+    margin-left: 0px;
+    right: 65px;
+    top: 65px;
+    width: auto;
+  }
+}
+/* This needs to remain the bottom line so that we can edit it easily. */
+@media (max-width: 450px) {
+  [adamant-modal],
+  [adamant-modal-static] {
+    bottom: auto;
+    height: 100%;
+    left: 0px;
+    min-width: 320px;
+    position: absolute;
+    right: auto;
+    top: 0px;
+  }
+}
