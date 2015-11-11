@@ -30,16 +30,20 @@ $(document).ready(function() {
        }
     });
     $('<link href="'+$.adamant.location+'/adamant-modal/adamant-modal.css" id="adamant-modal" rel="stylesheet" type="text/css" />').prependTo(document.head);
+    var adamantModalStylesheet = document.createElement('style');
+    document.head.appendChild(adamantModalStylesheet);
+    adamantModalStylesheet = adamantModalStylesheet.sheet;
+    adamantModalStylesheet.insertRule("@media(max-width:450px){[adamant-modal],[adamant-modal-static]{height:100%;top:0px;}}",0);
     var setHeight = function() {
       if ($(window).width() <= 450) {
-        var adamantModalStylesheet = document.getElementById('adamant-modal').sheet.cssRules;
-        adamantModalStylesheet[adamantModalStylesheet.length-1].cssRules[0].style.height = $(window).height()+'px';
+        var rule = adamantModalStylesheet.cssRules;
+        rule[rule.length-1].cssRules[0].style.height = $(window).height()+'px';
       }
     }
     var setTop = function() {
       if ($(window).width() <= 450) {
-        var adamantModalStylesheet = document.getElementById('adamant-modal').sheet.cssRules;
-        adamantModalStylesheet[adamantModalStylesheet.length-1].cssRules[0].style.top = $(window).scrollTop()+'px';
+        var rule = adamantModalStylesheet.cssRules;
+        rule[rule.length-1].cssRules[0].style.top = $(window).scrollTop()+'px';
       }
     };
     $('[adamant-modal].adamant-show,[adamant-modal-static].adamant-show').each(function() {

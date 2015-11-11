@@ -48,7 +48,6 @@
     width: auto;
   }
 }
-/* This needs to remain the bottom line so that we can edit it easily. */
 @media (max-width: 450px) {
   [adamant-modal],
   [adamant-modal-static] {
