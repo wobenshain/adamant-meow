@@ -1,6 +1,7 @@
 [adamant-modal],
 [adamant-modal-static] {
   background: #FFF;
+  bottom: 65px;
   overflow: auto;
   left: 50%;
   margin-left: -384px;

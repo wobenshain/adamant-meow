@@ -23,13 +23,14 @@ $(document).ready(function() {
             window.setTimeout(function() {
               target.removeClass('adamant-show').removeClass('adamant-fadeout').removeClass('adamant-fadein');
               background.remove();
+              target.trigger('adamant.modal.hidden');
             },1000);
           }
         },
-        "location": ""
+        "location": "http://wobenshain.github.io/adamant-meow/adamant-modal"
        }
     });
-    $('<link href="'+$.adamant.location+'/adamant-modal/adamant-modal.css" id="adamant-modal" rel="stylesheet" type="text/css" />').prependTo(document.head);
+    $('<link href="'+$.adamant.location+'/adamant-modal.css" id="adamant-modal" rel="stylesheet" type="text/css" />').prependTo(document.head);
     var adamantModalStylesheet = document.createElement('style');
     document.head.appendChild(adamantModalStylesheet);
     adamantModalStylesheet = adamantModalStylesheet.sheet;
@@ -53,7 +54,9 @@ $(document).ready(function() {
       },1);
     });
     $(document).on('click','[adamant-modal-close]',function() {
-      $.adamant.modal.close($(this).attr('adamant-modal-background') || $(this).closest('[adamant-modal],[adamant-modal-static]') || $(this).attr('adamant-modal-close'));
+      var target = $($(this).attr('adamant-modal-background') || $(this).closest('[adamant-modal],[adamant-modal-static]') || $(this).attr('adamant-modal-close'));
+      target.trigger('adamant.modal.hiding');
+      $.adamant.modal.close(target);
     });
     $(document).on('click','[adamant-modal-target]',function() {
       $.adamant.modal.open($(this).attr('adamant-modal-target'));
