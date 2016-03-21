@@ -1,0 +1,58 @@
+body {
+  background: #D8EDF2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  border: 3px solid #2a71a5;
+  border-radius: 12.7px;
+  margin: 0px auto;
+  padding: 10px;
+  width: 600px;
+}
+
+@media (min-width: 1305px) {
+  section {
+    float: left;
+    margin: 1%;
+    min-width: 600px;
+    width: 48%;
+  }
+}
+
+div {
+  border: 3px solid #2a71a5;
+  border-radius: 9.2px;
+  padding: 10px;
+}
+
+div + div {
+  margin-top: 10px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  box-sizing: border-box;
+  display: table-cell;
+  height: 60px;
+  margin: 0px;
+  padding-left: 10px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+p {
+  margin-bottom: 0px;
+}
