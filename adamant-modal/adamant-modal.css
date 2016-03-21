@@ -5,8 +5,9 @@
   overflow: auto;
   left: 50%;
   margin-left: -384px;
+  min-width: 320px;
   position: fixed;
-  top: 65px;
+  top: 30px;
   width: 768px;
 }
 [adamant-modal].adamant-show:not(.adamant-fadein),
@@ -41,23 +42,21 @@
 @media (max-width: 898px) {
   [adamant-modal],
   [adamant-modal-static] {
-    bottom: 65px;
-    left: 65px;
+    bottom: 30px;
+    left: 30px;
     margin-left: 0px;
-    right: 65px;
-    top: 65px;
+    right: 30px;
     width: auto;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 588px) {
   [adamant-modal],
   [adamant-modal-static] {
-    bottom: auto;
+    bottom: 0px;
     height: 100%;
     left: 0px;
-    min-width: 320px;
     position: absolute;
-    right: auto;
+    right: 0px;
     top: 0px;
   }
 }
