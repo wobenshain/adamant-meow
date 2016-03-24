@@ -1,0 +1,238 @@
+html, body {
+  margin: 0px;
+}
+
+[adamant-appmenu] {
+  margin: 0px auto;
+  -webkit-column-width: 320px;
+  -moz-column-width: 320px;
+  -o-column-width: 320px;
+  column-width: 320px;
+}
+
+[adamant-appmenu] * {
+  box-sizing: border-box;
+}
+
+[adamant-appmenu-section] {
+  border: 2px solid #000;
+  border-radius: 11.3px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 10px;
+  width: 320px;
+}
+
+@media (max-width: 1299px) {
+  [adamant-appmenu] {
+    width: 1020px;
+  }
+}
+
+@media (max-width: 1059px) {
+  [adamant-appmenu] {
+    width: 660px;
+  }
+}
+
+@media (max-width: 699px) {
+  [adamant-appmenu] {
+    margin: 0px auto;
+    width: 320px;
+  }
+  [adamant-appmenu-section] {
+    margin: 5px 0px;
+  }
+}
+
+[adamant-appmenu-sectionheader] {
+  display: block;
+  margin-left: 13px;
+}
+
+[adamant-appmenu-app] {
+  border: 0px solid;
+  display: block;
+  float: left;
+  margin: 13px;
+}
+
+[adamant-appmenu-app].adamant-appmenu-show {
+  -webkit-animation-name: adamant-appmenu-animation;
+  animation-name: adamant-appmenu-animation;
+  -webkit-animation-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+
+  border-width: 3px;
+  border-radius: 9.6px;
+  height: auto;
+  margin: 10px 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 296px;
+}
+
+[adamant-appmenu-app].adamant-appmenu-show.adamant-appmenu-close {
+  -webkit-animation-name: adamant-appmenu-animation;
+  animation-name: adamant-appmenu-animation;
+  -webkit-animation-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+
+  border-width: 0px;
+  border-radius: 0px;
+  display: block;
+  height: 60px;
+  margin: 13px;
+  overflow: hidden;
+  padding: 0px;
+  width: 60px;
+}
+
+[adamant-appmenu-app]:not(.adamant-appmenu-show) {
+  background: transparent;
+  display: block;
+  height: 60px;
+  overflow: hidden;
+  width: 60px;
+}
+
+[adamant-appmenu-appicon] {
+  cursor: pointer;
+  display: inline;
+  float: left;
+  height: 60px;
+  width: 60px;
+}
+[adamant-appmenu-appheader] {
+  display: block;
+  cursor: pointer;
+}
+[adamant-appmenu-app].adamant-appmenu-show [adamant-appmenu-appicon] {
+  float: left;
+}
+
+[adamant-appmenu-appheader] {
+  box-sizing: border-box;
+  display: table-cell;
+  height: 60px;
+  margin: 0px;
+  padding-left: 10px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes adamant-appmenu-animation {
+  from {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 66px;
+    margin: 10px;
+    padding: 0px;
+    width: 66px;
+  }
+  80% {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 66px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    width: 296px;
+  }
+  to {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 86px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 296px;
+  }
+}
+
+@-moz-keyframes adamant-appmenu-animation {
+  from {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 66px;
+    margin: 10px;
+    padding: 0px;
+    width: 66px;
+  }
+  80% {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 66px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    width: 296px;
+  }
+  to {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 86px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 296px;
+  }
+}
+
+@-o-keyframes adamant-appmenu-animation {
+  from {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 66px;
+    margin: 10px;
+    padding: 0px;
+    width: 66px;
+  }
+  80% {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 66px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    width: 296px;
+  }
+  to {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 86px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 296px;
+  }
+}
+
+@keyframes adamant-appmenu-animation {
+  from {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 66px;
+    margin: 10px;
+    padding: 0px;
+    width: 66px;
+  }
+  80% {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 66px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    width: 296px;
+  }
+  to {
+    border-width: 3px;
+    border-radius: 9.6px;
+    height: 86px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 296px;
+  }
+}
