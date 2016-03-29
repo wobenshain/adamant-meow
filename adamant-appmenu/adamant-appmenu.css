@@ -4,13 +4,13 @@ html, body {
 
 [adamant-appmenu] {
   margin: 0px auto;
-  -webkit-column-width: 320px;
-  -moz-column-width: 320px;
-  -o-column-width: 320px;
-  column-width: 320px;
+  max-width: 800px;
+  min-width: 320px;
+  padding: 0px 10px;
+  width: 80%;
 }
 
-[adamant-appmenu] * {
+[adamant-appmenu], [adamant-appmenu] * {
   box-sizing: border-box;
 }
 
@@ -18,31 +18,10 @@ html, body {
   border: 2px solid #000;
   border-radius: 11.3px;
   display: inline-block;
-  margin: 10px;
+  margin: 10px 0px;
+  overflow: hidden;
   padding: 10px 10px;
-  width: 320px;
-}
-
-@media (max-width: 1299px) {
-  [adamant-appmenu] {
-    width: 1020px;
-  }
-}
-
-@media (max-width: 1059px) {
-  [adamant-appmenu] {
-    width: 660px;
-  }
-}
-
-@media (max-width: 699px) {
-  [adamant-appmenu] {
-    margin: 0px auto;
-    width: 320px;
-  }
-  [adamant-appmenu-section] {
-    margin: 5px 0px;
-  }
+  width: 100%;
 }
 
 [adamant-appmenu-sectionheader] {
