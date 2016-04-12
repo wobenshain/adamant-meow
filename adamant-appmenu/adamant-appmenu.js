@@ -32,7 +32,7 @@ $(document).ready(function() {
             },500);
           }
         },
-        "location": "http://wobenshain.github.io/adamant-meow/"
+        "location": "http://wobenshain.github.io/adamant-meow"
        }
     });
     $('<link href="'+$.adamant.location+'/adamant-appmenu/adamant-appmenu.css" id="adamant-modal" rel="stylesheet" type="text/css" />').prependTo(document.head);

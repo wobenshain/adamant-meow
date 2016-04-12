@@ -27,10 +27,10 @@ $(document).ready(function() {
             },1000);
           }
         },
-        "location": "http://wobenshain.github.io/adamant-meow/adamant-modal"
+        "location": "http://wobenshain.github.io/adamant-meow"
        }
     });
-    $('<link href="'+$.adamant.location+'/adamant-modal.css" id="adamant-modal" rel="stylesheet" type="text/css" />').prependTo(document.head);
+    $('<link href="'+$.adamant.location+'/adamant-modal/adamant-modal.css" id="adamant-modal" rel="stylesheet" type="text/css" />').prependTo(document.head);
     var adamantModalStylesheet = document.createElement('style');
     document.head.appendChild(adamantModalStylesheet);
     adamantModalStylesheet = adamantModalStylesheet.sheet;
